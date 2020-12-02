@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>CSS基础语法 | 小资的分享</title>
+  <title>CSS-基础语法 | 小资的分享</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="CSS基础语法">
-<meta property="og:url" content="http://example.com/2020/11/29/CSS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
+  <meta name="description" content="基本语法：   内联式：也叫内行式,在html标签上 style内直接书写。没有脱离html，只能给一个标签使用。1&lt;p style&#x3D;&quot;font-size: 20px;&quot;&gt;内联式&lt;&#x2F;p&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS-基础语法">
+<meta property="og:url" content="http://example.com/2020/12/02/CSS-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="小资的分享">
+<meta property="og:description" content="基本语法：   内联式：也叫内行式,在html标签上 style内直接书写。没有脱离html，只能给一个标签使用。1&lt;p style&#x3D;&quot;font-size: 20px;&quot;&gt;内联式&lt;&#x2F;p&gt;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-29T09:56:30.000Z">
-<meta property="article:modified_time" content="2020-11-29T12:21:35.941Z">
+<meta property="article:published_time" content="2020-12-02T06:26:03.000Z">
+<meta property="article:modified_time" content="2020-12-02T06:28:30.030Z">
 <meta property="article:author" content="ALL">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -153,82 +155,86 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS基础语法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-CSS-基础语法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS基础语法
+      CSS-基础语法
     </h1>
   
 
         
-        <a href="/2020/11/29/CSS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-11-29T09:56:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
+        <a href="/2020/12/02/CSS-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-12-02T06:26:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- ![CSS基础语法](CSS基础语法/CSS基础语法.jpg) -->
-<a id="more"></a>
-<h4 id="基本语法："><a href="#基本语法：" class="headerlink" title="基本语法："></a>基本语法：</h4><pre><code>内联式：也叫内行式,在html标签上 style内直接书写。没有脱离html，只能给一个标签使用。
-内嵌式：在head标签内有一个style标签，属性和选择器放在其中
-        实现了结构样式分离，但没有完全分离，节省了代码量，头重脚轻，不利于阅读
-外联式：head内部用link标签引入,完全实现了html和css完全分离，可以公用减少代码量，一个css文件可以多次引用.
-        rel：表示引入css
-        href：文件路径
-        type：&quot;text/css&quot; 按纯文本形式的css代码加载，h5中可以省略type
-导入式：在内嵌式style内部，或外联式样式表内部，导入其它css文件
-    利用@import url(路径) 进行引入
-    和外联式基本相同，导入式先加载html代码</code></pre>
-<h4 id="选择器由一条和多条声明构成"><a href="#选择器由一条和多条声明构成" class="headerlink" title="选择器由一条和多条声明构成"></a>选择器由一条和多条声明构成</h4><pre><code>内嵌式为例：
-    所有css代码都必须写在head标签内部的style内
-    css给标签设置样式前 ，必须使用选择器选中标签
-    属性名：属性值的键值对写法
-    每个选择器添加样式都必须在&#123;&#125;内
-    一个标签添加的所有样式 都必须在&#123;&#125;内部一一罗列出来
-    每条属性用分号隔开</code></pre>
-<h4 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h4><pre><code>展开格式，可读性强，便于调试
-紧凑格式，便于上传，减少体积
-css中英文可以用大写也可以用小写，一般用小写</code></pre>
-<h4 id="文字的三属性："><a href="#文字的三属性：" class="headerlink" title="文字的三属性："></a>文字的三属性：</h4><pre><code>颜色：color：颜色名/颜色值
-字体：font-family:&quot;字体名称&quot;。如果不设置，不同浏览器有自己默认的字体
-可以设置多个属性值，用逗号隔开。按顺序查找。找不到则查找下一个
-字体的设置必须是电脑支持的
-中文字体一般可以设置英文
-字号：font-size:
-可以使用相对长度单位和绝对长度单位
-如果不设置，不同浏览器有自己默认的加载字号
-不同浏览器也有自己最小加载显示的字号，如果设置低于最小字号，都以最小字号加载
-网页中最小的设置字号必须是12px，小于12px会出现兼容问题。现在普遍使用14px+ ，尽量使用偶数字号。</code></pre>
-<h4 id="盒子实体化的三属性"><a href="#盒子实体化的三属性" class="headerlink" title="盒子实体化的三属性"></a>盒子实体化的三属性</h4><pre><code>盒子实体化的三属性：
-    width:宽度。单位可以是绝对单位和相对单位。一般使用px。
-    height:高度。
-    background-color:背景颜色。属性值可以是颜色名，rgb值，十六进制数。</code></pre>
-<h4 id="css选择器：类上样式，id上行为。"><a href="#css选择器：类上样式，id上行为。" class="headerlink" title="css选择器：类上样式，id上行为。"></a>css选择器：类上样式，id上行为。</h4><pre><code>基础选择器：
-    1.标签选择器：通过标签名选择,选中所有的同名标签。设置所有同名标签的公共样式。
-    2.id选择器（#）：通过id选择标签，只能选中一个标签。id名必须以字母开头。id不能重名。
-    3.类选择器（.）：通过class选择标签。类名必须以字母开头。可以给同一个标签添加多个calss属性值，用空格隔开。公共样式可以用原子类。
-    4.通配符选择器(*)：可以实现全选，简化书写 。通配符选择效率低，会导致浏览器做一些无用工作。
-高级选择器：
-    5.后代选择器：通过标签之间嵌套去选择元素，也叫包含选择器。通过空格 进行后代选择。后代关系不仅仅只能是父子关系。
-    6.交集选择器：交集选择器连续书写。如果有标签选择器则标签选择器开头。
-    7.并集选择器：不同选择器选中的元素都要设置相同的样式，并集选择器可以进行简化，将多个选择器中间用逗号分隔，最后一个不用加逗号。可以替代通配符选择器，提高效率。</code></pre>
-<h4 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h4><pre><code>一个标签可以从祖先级继承样式。能继承的是所有文字相关样式属性，其它属性不能被继承。可以将重复的文字样式赋值给比较大的祖先级，精简代码。</code></pre>
-<h4 id="成叠性"><a href="#成叠性" class="headerlink" title="成叠性"></a>成叠性</h4><pre><code>同一个标签被多个选择器选中，最终只会有一个属性加载成功，会成叠掉其他属性。
-1.选中目标，比较权重，
-    基础选择器：选择器范围越大 权重越小。*&lt;标签选择器&lt;类选择器&lt;id选择器
-    高级选择器：依次比较组成高级选择器的id个数，类的个数，标签的个数，如果前面能够比较出大小就不再比较后面，前面相等就往后比较。
-    权重相同，则按css的加载顺序，后写的会成叠掉先写的。
-2.选中目标的祖先级
-    文字样式可以继承，就近原则
-    距离相同的祖先级，则继续判断权重
-！important 会将css样式的权重提升至最大，就近原则中不需要比较权重 ！important就会失效，！important不能提升选择器的权重。
-行内式：行内式权重最高 ，仅仅低于！important</code></pre>
+        <h3 id="基本语法："><a href="#基本语法：" class="headerlink" title="基本语法："></a>基本语法：</h3><ul>
+<li>  内联式：也叫内行式,在html标签上 style内直接书写。没有脱离html，只能给一个标签使用。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style&#x3D;&quot;font-size: 20px;&quot;&gt;内联式&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a></li>
+<li>  内嵌式：在head标签内有一个style标签，属性和选择器放在其中。实现了结构样式分离，但没有完全分离，节省了代码量，头重脚轻，不利于阅读。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;style&gt;选择器和属性&lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure></li>
+<li>外联式：head内部用link标签引入,完全实现了html和css完全分离，可以公用减少代码量，一个css文件可以多次引用。<pre><code>      rel：表示引入css。href：文件路径。type：&quot;text/css&quot; 按纯文本形式的css代码加载，h5中可以省略type。</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;.&#x2F;css&#x2F;css基础语法.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure></li>
+<li>导入式：在内嵌式style内部，或外联式样式表内部，导入其它css文件。利用@import url(路径) 进行引入。<pre><code>  和外联式基本相同，导入式先加载html代码。</code></pre>
+</li>
+</ul>
+<h3 id="选择器："><a href="#选择器：" class="headerlink" title="选择器："></a>选择器：</h3><ul>
+<li><p>由一条和多条声明构成。<br>  内嵌式为例：所有css代码都必须写在head标签内部的style内。css给标签设置样式前 ，必须使用选择器选中标签。<br>  选择器：{属性名：属性值} 的键值对写法。每条属性用分号隔开。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">    p &#123;</span><br><span class="line">            font-size: 20px;</span><br><span class="line">        &#125;</span><br><span class="line">&#96;&#96;&#96;        </span><br><span class="line">        </span><br><span class="line">### 格式：</span><br><span class="line">-   展开格式，可读性强，便于调试。</span><br><span class="line">-   紧凑格式，便于上传，减少体积。</span><br><span class="line">-   css中英文可以用大写也可以用小写，一般用小写。</span><br><span class="line"></span><br><span class="line">### 文字的三属性：</span><br><span class="line">-   颜色：color：颜色名&#x2F;颜色值。</span><br><span class="line">-   字体：font-family:&quot;字体名称&quot;。如果不设置，不同浏览器有自己默认的字体。</span><br><span class="line">    可以设置多个属性值，用逗号隔开。按顺序查找。找不到则查找下一个。</span><br><span class="line">    字体的设置必须是电脑支持的。中文字体一般可以设置英文。</span><br><span class="line">-   字号：font-size。可以使用相对长度单位和绝对长度单位。</span><br><span class="line">    如果不设置，不同浏览器有自己默认的加载字号。</span><br><span class="line">    不同浏览器也有自己最小加载显示的字号，如果设置低于最小字号，都以最小字号加载。</span><br><span class="line">    网页中最小的设置字号必须是12px，小于12px会出现兼容问题。现在普遍使用14px+ ，尽量使用偶数字号。</span><br></pre></td></tr></table></figure>
+<p>  #p {</p>
+<pre><code>      /* 文字的三属性：颜色，字体，字号*/
+      color: blueviolet;
+      font-family: &#39;宋体&#39;,&#39;正楷&#39;;
+      font-size: 20px;
+  &#125;</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 盒子实体化的三属性：</span><br><span class="line">-    width:宽度。单位可以是绝对单位和相对单位。一般使用px。</span><br><span class="line">-    height:高度。</span><br><span class="line">-    background-color:背景颜色。属性值可以是颜色名，rgb值，十六进制数。</span><br><span class="line"></span><br><span class="line">### css选择器：类上样式，id上行为。</span><br><span class="line">-   基础选择器：</span><br><span class="line">    1.标签选择器：通过标签名选择,选中所有的同名标签。设置所有同名标签的公共样式。</span><br><span class="line">    2.id选择器（#）：通过id选择标签，只能选中一个标签。id名必须以字母开头。id不能重名。</span><br><span class="line">    3.类选择器（.）：通过class选择标签。类名必须以字母开头。可以给同一个标签添加多个calss属性值，用空开。公共样式可以用原子类。</span><br><span class="line">    4.通配符选择器(*)：可以实现全选，简化书写 。通配符选择效率低，会导致浏览器做一些无用工作。</span><br><span class="line">-   高级选择器：</span><br><span class="line">    5.后代选择器：通过标签之间嵌套去选择元素，也叫包含选择器。通过空格 进行后代选择。后代关系不仅仅只能子关系。</span><br><span class="line">    6.交集选择器：交集选择器连续书写。如果有标签选择器则标签选择器开头。</span><br><span class="line">    7.并集选择器：不同选择器选中的元素都要设置相同的样式，并集选择器可以进行简化，将多个选择器中间用逗号分隔，最后一个不用加逗号。可以替代通配符选择器，提高效率。</span><br></pre></td></tr></table></figure>
+<p>  /* 选择器 */</p>
+<pre><code>  /* 通配符选择器 */
+  * &#123;
+
+  &#125;
+  /* 标签选择器 */
+  p &#123;
+
+  &#125;
+  /* id选择器 */
+  #p &#123;
+
+  &#125;
+  /* 类选择器 */
+  .div &#123;
+
+  &#125;
+  /* 后代选择器 */
+  ul li &#123;
+
+  &#125;
+  /* 交集选择器 */
+  li#li&#123;
+
+  &#125;
+  /* 并集选择器 */
+  #td1,#td2 &#123;
+
+  &#125;</code></pre>
+<pre><code></code></pre>
+</li>
+</ul>
+<h3 id="继承性："><a href="#继承性：" class="headerlink" title="继承性："></a>继承性：</h3><ul>
+<li>  一个标签可以从祖先级继承样式。能继承的是所有文字相关样式属性，其它属性不能被继承。可以将重复的文字样式赋值给比较大的祖先级，精简代码。</li>
+</ul>
+<h4 id="成叠性："><a href="#成叠性：" class="headerlink" title="成叠性："></a>成叠性：</h4><ul>
+<li>  同一个标签被多个选择器选中，最终只会有一个属性加载成功，会成叠掉其他属性。</li>
+<li>选中目标，比较权重。<br>  1.基础选择器：选择器范围越大 权重越小。*&lt;标签选择器&lt;类选择器&lt;id选择器。<br>  2.高级选择器：依次比较组成高级选择器的id个数，类的个数，标签的个数，如果前面能够比较出大小就不再比较后面，前面相等就往后比较。<br>  3.权重相同，则按css的加载顺序，后写的会成叠掉先写的。</li>
+<li>选中目标的祖先级。<br>  1.就近原则，文字样式可以继承。<br>  2.距离相同的祖先级，则继续判断权重。</li>
+<li>  !important 会将css样式的权重提升至最大，就近原则中不需要比较权重 !important就会失效，!important不能提升选择器的权重。行内式：行内式权重最高，仅仅低于!important。</li>
+</ul>
 
       
 
@@ -319,7 +325,7 @@ css中英文可以用大写也可以用小写，一般用小写</code></pre>
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/29/CSS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/12/02/CSS-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -334,8 +340,8 @@ css中英文可以用大写也可以用小写，一般用小写</code></pre>
 <nav id="article-nav">
   
   
-    <a href="/2020/11/29/HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML常用标签</div>
+    <a href="/2020/12/02/HTML-%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML-基础与常用标签</div>
       <i class="icon-circle-right"></i>
     </a>
   
